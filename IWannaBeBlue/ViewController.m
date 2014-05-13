@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *colorLabel;
 
 @end
 
@@ -17,7 +18,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	self.colorLabel.text = @"I soooo wanna be blue";
+}
+
+- (IBAction)onChangeColorButtonPressed:(id)sender
+{
+    self.colorLabel.backgroundColor = [UIColor blueColor];
+    self.colorLabel.text = @"Yah I'm Blue!";
+    self.colorLabel.textColor = [UIColor whiteColor];
+    
 }
 
 - (void)didReceiveMemoryWarning

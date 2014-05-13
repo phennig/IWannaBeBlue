@@ -21,6 +21,7 @@
 		58D05EFE1921478E004A8167 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D05EE01921478E004A8167 /* UIKit.framework */; };
 		58D05F061921478E004A8167 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58D05F041921478E004A8167 /* InfoPlist.strings */; };
 		58D05F081921478E004A8167 /* IWannaBeBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D05F071921478E004A8167 /* IWannaBeBlueTests.m */; };
+		58D05F1219215E49004A8167 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D05F1119215E49004A8167 /* CheckMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		58D05F031921478E004A8167 /* IWannaBeBlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IWannaBeBlueTests-Info.plist"; sourceTree = "<group>"; };
 		58D05F051921478E004A8167 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58D05F071921478E004A8167 /* IWannaBeBlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IWannaBeBlueTests.m; sourceTree = "<group>"; };
+		58D05F1119215E49004A8167 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CheckMate.framework; path = ../../../../Downloads/CheckMate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D05F1219215E49004A8167 /* CheckMate.framework in Frameworks */,
 				58D05EDF1921478E004A8167 /* CoreGraphics.framework in Frameworks */,
 				58D05EE11921478E004A8167 /* UIKit.framework in Frameworks */,
 				58D05EDD1921478E004A8167 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		58D05EDB1921478E004A8167 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				58D05F1119215E49004A8167 /* CheckMate.framework */,
 				58D05EDC1921478E004A8167 /* Foundation.framework */,
 				58D05EDE1921478E004A8167 /* CoreGraphics.framework */,
 				58D05EE01921478E004A8167 /* UIKit.framework */,
@@ -378,6 +382,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paul.hennig/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IWannaBeBlue/IWannaBeBlue-Prefix.pch";
 				INFOPLIST_FILE = "IWannaBeBlue/IWannaBeBlue-Info.plist";
@@ -391,6 +399,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paul.hennig/Downloads,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IWannaBeBlue/IWannaBeBlue-Prefix.pch";
 				INFOPLIST_FILE = "IWannaBeBlue/IWannaBeBlue-Info.plist";
